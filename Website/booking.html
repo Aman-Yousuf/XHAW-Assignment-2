@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Us - Pawsitive Pet Academy</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <h2>Pawsitive Pet</h2>
+        <h3>Academy</h3>
+      </div>
+
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="overview.html">OVERVIEW</a>
+        <a href="services.html">SERVICES</a>
+        <a href="#">FEES</a>
+        <a href="#">CONTACT</a>
+        <a href="booking.html">BOOK US</a>
+      </nav>
+    </header>
+
+    <!-- Desktop 4: Booking & Fee Calculator -->
+    <main>
+      <section class="booking-calculator">
+        <form>
+          <!-- Select Service Dropdown -->
+          <div class="form-group">
+            <label for="service-select">Select Service</label>
+            <select id="service-select" name="service">
+              <option value="" disabled selected>Choose A Service</option>
+              <option value="pet-care">Pet Care</option>
+              <option value="training">Training</option>
+              <option value="grooming">Grooming</option>
+              <option value="other">Other Activities</option>
+            </select>
+          </div>
+
+          <!-- Select Pet Size Buttons -->
+          <div class="form-group">
+            <label>Select Pet Size</label>
+            <div class="size-options">
+              <button type="button" class="size-btn">Small</button>
+              <button type="button" class="size-btn">Medium</button>
+              <button type="button" class="size-btn">Large</button>
+            </div>
+          </div>
+
+          <!-- Number Of Services Counter -->
+          <div class="form-group">
+            <label for="service-count">Number Of Services</label>
+            <div class="quantity-picker">
+              <button type="button" class="qty-btn">+</button>
+              <input
+                type="number"
+                id="service-count"
+                value="1"
+                min="1"
+                readonly
+              />
+              <button type="button" class="qty-btn">-</button>
+            </div>
+          </div>
+
+          <!-- Calculate Fee Action -->
+          <button type="button" class="calc-btn">Calculate Fee</button>
+
+          <!-- Display Total Fee -->
+          <div class="total-display">
+            <p>[Total Shown here]</p>
+          </div>
+
+          <!-- Proceed Link/Button -->
+          <div class="proceed-container">
+            <button type="submit" class="proceed-btn">
+              Proceed To Booking &rarr;
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
