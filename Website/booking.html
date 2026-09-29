@@ -81,6 +81,66 @@
           </div>
         </form>
       </section>
+
+      <!-- Desktop 5: Booking Form -->
+      <section class="booking-form-section">
+        <h2>Book a Service For Your Pet</h2>
+
+        <form action="#" method="POST">
+          <!-- Your Name -->
+          <div class="form-group">
+            <label for="user-name">YOUR NAME</label>
+            <input
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <!-- Pet Name -->
+          <div class="form-group">
+            <label for="pet-name">PET NAME</label>
+            <input
+              type="text"
+              id="pet-name"
+              name="pet-name"
+              placeholder="Enter your pet's name"
+              required
+            />
+          </div>
+
+          <!-- Select Date -->
+          <div class="form-group">
+            <label for="booking-date">SELECT DATE</label>
+            <input type="date" id="booking-date" name="booking-date" required />
+          </div>
+
+          <!-- Select Time -->
+          <div class="form-group">
+            <label for="booking-time">SELECT TIME</label>
+            <input type="time" id="booking-time" name="booking-time" required />
+          </div>
+
+          <!-- Additional Notes -->
+          <div class="form-group">
+            <label for="additional-notes">ADDITIONAL NOTES</label>
+            <textarea
+              id="additional-notes"
+              name="additional-notes"
+              rows="4"
+              placeholder="Any special requirements or instructions..."
+            ></textarea>
+          </div>
+
+          <!-- Form Buttons -->
+          <div class="form-actions">
+            <button type="button" class="btn-secondary">VIEW FEE</button>
+            <button type="submit" class="btn-primary">CONFIRM BOOKING</button>
+          </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
