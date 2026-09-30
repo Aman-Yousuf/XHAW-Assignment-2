@@ -7,4 +7,155 @@
     android:layout_height="match_parent"
     tools:context=".CoursesListPage">
 
+    <TextView
+        android:id="@+id/txtOurServices"
+        android:layout_width="161dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="Our Services:"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="414dp"
+        android:layout_height="92dp"
+        app:cardBackgroundColor="#1CABB0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/logo_1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="412dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.254">
+
+        <TextView
+            android:id="@+id/txtPetCare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pet Care"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:translationX="100dp"
+            app:srcCompat="@drawable/whatsapp_image_2026_09_22_at_09_33_24" />
+
+        <Button
+            android:id="@+id/btnPetCare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1CABB0"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:translationX="300dp"
+            android:translationY="50dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="412dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.535">
+
+        <TextView
+            android:id="@+id/txtTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Training"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:translationX="100dp"
+            app:srcCompat="@drawable/whatsapp_image_2026_09_22_at_09_33_24__1_" />
+
+        <Button
+            android:id="@+id/btnTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1CABB0"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:translationX="300dp"
+            android:translationY="50dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="412dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.839">
+
+        <TextView
+            android:id="@+id/txtGrooming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Grooming"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:translationY="50dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="195dp"
+            android:layout_height="match_parent"
+            android:translationX="100dp"
+            app:srcCompat="@drawable/whatsapp_image_2026_09_22_at_09_33_25" />
+
+        <Button
+            android:id="@+id/btnGrooming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1CABB0"
+            android:text="Select"
+            android:textColor="@color/black"
+            android:translationX="300dp"
+            android:translationY="50dp" />
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
