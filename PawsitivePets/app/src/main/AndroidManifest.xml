@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PawsitivePets">
         <activity
+            android:name=".Grooming"
+            android:exported="false" />
+        <activity
+            android:name=".Training"
+            android:exported="false" />
+        <activity
+            android:name=".PetCare"
+            android:exported="false" />
+        <activity
             android:name=".ContactUsPage"
             android:exported="false" />
         <activity
