@@ -30,7 +30,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/MoveBtn"
+        android:id="@+id/btnLetsGo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#D9D9D9"
