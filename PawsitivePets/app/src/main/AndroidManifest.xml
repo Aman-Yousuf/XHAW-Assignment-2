@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PawsitivePets">
         <activity
+            android:name=".ContactUsPage"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUsPage"
+            android:exported="false" />
+        <activity
+            android:name=".HomePage"
+            android:exported="false" />
+        <activity
+            android:name=".IndividualCoursePage"
+            android:exported="false" />
+        <activity
+            android:name=".CoursesListPage"
+            android:exported="false" />
+        <activity
+            android:name=".CalculateFeesPage"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
