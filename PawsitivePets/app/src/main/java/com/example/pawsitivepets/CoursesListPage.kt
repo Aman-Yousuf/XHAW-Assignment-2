@@ -19,6 +19,10 @@ class CoursesListPage : AppCompatActivity() {
             insets
         }
 
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
         findViewById<Button>(R.id.btnPetCare).setOnClickListener {
             startActivity(Intent(this, PetCare::class.java))
         }

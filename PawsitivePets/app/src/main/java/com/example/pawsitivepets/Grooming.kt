@@ -20,6 +20,10 @@ class Grooming : AppCompatActivity() {
             insets
         }
 
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
         val grooming = findViewById<CheckBox>(R.id.checkBathAndDry)
 
         findViewById<Button>(R.id.btnConfirmSelection3).setOnClickListener {

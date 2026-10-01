@@ -20,6 +20,10 @@ class Training : AppCompatActivity() {
             insets
         }
 
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
         val puppyCare = findViewById<CheckBox>(R.id.checkPuppyTraining)
         val obedience = findViewById<CheckBox>(R.id.checkBasicObedience)
         val behaviour = findViewById<CheckBox>(R.id.checkBehaviorTraining)

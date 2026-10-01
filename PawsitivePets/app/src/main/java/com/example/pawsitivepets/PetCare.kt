@@ -20,6 +20,10 @@ class PetCare : AppCompatActivity() {
             insets
         }
 
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
         val firstAid = findViewById<CheckBox>(R.id.checkPetSitting)
         val businessMgmt = findViewById<CheckBox>(R.id.checkDogWalking)
 

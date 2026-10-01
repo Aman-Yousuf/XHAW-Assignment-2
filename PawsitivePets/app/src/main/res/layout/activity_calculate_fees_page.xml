@@ -92,6 +92,16 @@
             android:layout_width="130dp"
             android:layout_height="match_parent"
             app:srcCompat="@drawable/logo_1" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#D9D9D9"
+            android:text="Back"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
 
     <TextView

@@ -35,6 +35,10 @@ class CalculateFeesPage : AppCompatActivity() {
             insets
         }
 
+        findViewById<Button>(R.id.btnBack).setOnClickListener {
+            finish()
+        }
+
         txtSelectedService = findViewById(R.id.txtSelectedService)
         txtTotal = findViewById(R.id.txtTotal)
         etName = findViewById(R.id.etName)
