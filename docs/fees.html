@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Course Fees - Pawsitive Pet Academy</title>
+    <title>Course Fees & Calculator - Pawsitive Pet Academy</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header Navigation -->
     <header>
       <div class="logo">
-        <h2>Pawsitive Pet</h2>
-        <h3>Academy</h3>
+        <img
+          src="images/logo.png"
+          alt="Pawsitive Pet Academy Logo"
+          width="120"
+        />
+        <h2>Pawsitive Pet Academy</h2>
       </div>
-
       <nav>
         <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT US</a>
         <a href="overview.html">OVERVIEW</a>
         <a href="services.html">SERVICES</a>
         <a href="fees.html">FEES</a>
@@ -24,141 +27,68 @@
       </nav>
     </header>
 
-    <!-- Main Content: Course Fees -->
     <main>
-      <section class="fees-container">
-        <h2>Course Fees &amp; Offerings</h2>
-        <p class="fees-subtitle">
-          Explore our complete range of pet care, training, and business
-          courses.
+      <section class="calculator-section">
+        <h2>Course Fee Estimator</h2>
+        <p>
+          Select the courses you wish to enroll in to estimate your total fees.
         </p>
 
-        <div class="fees-grid">
-          <!-- Dog Obedience Training -->
-          <article class="fee-card">
-            <h3>Dog Obedience Training</h3>
-            <p class="price">R1,500</p>
-            <p>
-              <strong>Purpose:</strong> To teach effective dog obedience and
-              behavioural training techniques.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Basic commands</li>
-              <li>Leash training</li>
-              <li>Behaviour correction</li>
-              <li>Positive reinforcement</li>
-              <li>Socialisation techniques</li>
-            </ul>
-          </article>
+        <form id="fee-calculator-form">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <div>
+              <label for="calc-name">Full Name:</label>
+              <input type="text" id="calc-name" name="name" required />
+            </div>
+            <div>
+              <label for="calc-phone">Phone Number:</label>
+              <input type="tel" id="calc-phone" name="phone" required />
+            </div>
+            <div>
+              <label for="calc-email">Email Address:</label>
+              <input type="email" id="calc-email" name="email" required />
+            </div>
+          </fieldset>
 
-          <!-- Pet Grooming -->
-          <article class="fee-card">
-            <h3>Pet Grooming</h3>
-            <p class="price">R1,500</p>
-            <p>
-              <strong>Purpose:</strong> To provide professional grooming skills
-              for domestic pets.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Coat care</li>
-              <li>Bathing techniques</li>
-              <li>Nail trimming</li>
-              <li>Ear and eye cleaning</li>
-              <li>Grooming equipment</li>
-            </ul>
-          </article>
+          <fieldset>
+            <legend>Select Courses</legend>
+            <div>
+              <input type="checkbox" id="course1" name="course" value="1500" />
+              <label for="course1">Dog Obedience Training – R1500</label>
+            </div>
+            <div>
+              <input type="checkbox" id="course2" name="course" value="1500" />
+              <label for="course2">Pet Grooming – R1500</label>
+            </div>
+            <div>
+              <input type="checkbox" id="course3" name="course" value="1500" />
+              <label for="course3">Animal Behaviour – R1500</label>
+            </div>
+            <div>
+              <input type="checkbox" id="course4" name="course" value="1500" />
+              <label for="course4">Pet Business Management – R1500</label>
+            </div>
+            <div>
+              <input type="checkbox" id="course5" name="course" value="750" />
+              <label for="course5">Puppy Care – R750</label>
+            </div>
+            <div>
+              <input type="checkbox" id="course6" name="course" value="750" />
+              <label for="course6">Pet First Aid – R750</label>
+            </div>
+            <div>
+              <input type="checkbox" id="course7" name="course" value="750" />
+              <label for="course7">Basic Dog Walking – R750</label>
+            </div>
+          </fieldset>
 
-          <!-- Animal Behaviour -->
-          <article class="fee-card">
-            <h3>Animal Behaviour</h3>
-            <p class="price">R1,500</p>
-            <p>
-              <strong>Purpose:</strong> To understand common pet behaviours and
-              improve communication with animals.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Animal psychology</li>
-              <li>Reading body language</li>
-              <li>Stress management</li>
-              <li>Behaviour modification</li>
-              <li>Enrichment activities</li>
-            </ul>
-          </article>
+          <button type="button" id="btn-calculate">Calculate Total</button>
 
-          <!-- Pet Business Management -->
-          <article class="fee-card">
-            <h3>Pet Business Management</h3>
-            <p class="price">R1,500</p>
-            <p>
-              <strong>Purpose:</strong> To prepare learners to operate a
-              successful pet-related business.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Customer service</li>
-              <li>Marketing</li>
-              <li>Business planning</li>
-              <li>Financial management</li>
-              <li>Legal requirements</li>
-            </ul>
-          </article>
-
-          <!-- Puppy Care -->
-          <article class="fee-card">
-            <h3>Puppy Care</h3>
-            <p class="price">R750</p>
-            <p>
-              <strong>Purpose:</strong> To provide new puppy owners with
-              essential care knowledge.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Feeding</li>
-              <li>Vaccinations</li>
-              <li>Toilet training</li>
-              <li>Exercise</li>
-              <li>Socialisation</li>
-            </ul>
-          </article>
-
-          <!-- Pet First Aid -->
-          <article class="fee-card">
-            <h3>Pet First Aid</h3>
-            <p class="price">R750</p>
-            <p>
-              <strong>Purpose:</strong> To provide emergency first aid knowledge
-              for pets.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Minor injuries</li>
-              <li>CPR basics</li>
-              <li>Poison awareness</li>
-              <li>Heatstroke</li>
-              <li>Emergency transport</li>
-            </ul>
-          </article>
-
-          <!-- Basic Dog Walking -->
-          <article class="fee-card">
-            <h3>Basic Dog Walking</h3>
-            <p class="price">R750</p>
-            <p>
-              <strong>Purpose:</strong> To teach safe and professional dog
-              walking practices.
-            </p>
-            <h4>Content Included:</h4>
-            <ul>
-              <li>Walking equipment</li>
-              <li>Handling multiple dogs</li>
-              <li>Safety procedures</li>
-              <li>Exercise routines</li>
-            </ul>
-          </article>
-        </div>
+          <div class="total-display">
+            <h3>Total Estimated Cost: <span id="total-amount">R0</span></h3>
+          </div>
+        </form>
       </section>
     </main>
   </body>
