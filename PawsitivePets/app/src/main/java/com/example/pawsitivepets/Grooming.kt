@@ -1,6 +1,9 @@
 package com.example.pawsitivepets
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.CheckBox
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,13 @@ class Grooming : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val grooming = findViewById<CheckBox>(R.id.checkBathAndDry)
+
+        findViewById<Button>(R.id.btnConfirmSelection3).setOnClickListener {
+            Booking.update("Pet Grooming", 1500.0, grooming.isChecked)
+            startActivity(Intent(this, CalculateFeesPage::class.java))
         }
     }
 }
