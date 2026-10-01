@@ -45,6 +45,10 @@ class CalculateFeesPage : AppCompatActivity() {
         etPhone = findViewById(R.id.etPhone)
         etEmail = findViewById(R.id.etEmail)
 
+        txtSelectedService.setOnClickListener {
+            startActivity(Intent(this, CoursesListPage::class.java))
+        }
+
         findViewById<Button>(R.id.btnCalculateTotal).setOnClickListener {
             calculateTotal()
         }
@@ -56,7 +60,7 @@ class CalculateFeesPage : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         if (Booking.courseNames.isEmpty()) {
-            txtSelectedService.text = "No courses selected yet"
+            txtSelectedService.text = "No courses selected yet, tap here to choose"
         } else {
             txtSelectedService.text = Booking.courseNames.joinToString(", ")
         }

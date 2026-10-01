@@ -44,15 +44,13 @@
         android:layout_width="243dp"
         android:layout_height="79dp"
         android:backgroundTint="#1CABB0"
-        android:text="Book a Service"
+        android:text="Calculate Fees"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.313" />
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
 
     <Button
         android:id="@+id/btnContactUs"
@@ -93,6 +91,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.323" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
