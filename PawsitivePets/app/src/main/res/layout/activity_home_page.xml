@@ -7,4 +7,92 @@
     android:layout_height="match_parent"
     tools:context=".HomePage">
 
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="161dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.152" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="414dp"
+        android:layout_height="92dp"
+        app:cardBackgroundColor="#1CABB0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/logo_1" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnBookAService"
+        android:layout_width="243dp"
+        android:layout_height="79dp"
+        android:backgroundTint="#1CABB0"
+        android:text="Book a Service"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.313" />
+
+    <Button
+        android:id="@+id/btnContactUs"
+        android:layout_width="243dp"
+        android:layout_height="79dp"
+        android:backgroundTint="#1CABB0"
+        android:text="Contact Us"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.849" />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="243dp"
+        android:layout_height="79dp"
+        android:backgroundTint="#1CABB0"
+        android:text="About Us"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.674" />
+
+    <Button
+        android:id="@+id/btnViewServices"
+        android:layout_width="243dp"
+        android:layout_height="79dp"
+        android:backgroundTint="#1CABB0"
+        android:text="View Services"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView2" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
