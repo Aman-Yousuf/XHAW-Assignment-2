@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Details - Pawsitive Pet Academy</title>
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header>
+      <div class="logo">
+        <h2>Pawsitive Pet</h2>
+        <h3>Academy</h3>
+      </div>
+
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="overview.html">OVERVIEW</a>
+        <a href="services.html">SERVICES</a>
+        <a href="#">FEES</a>
+        <a href="#">CONTACT</a>
+        <a href="booking.html">BOOK US</a>
+      </nav>
+    </header>
+
+    <!-- Desktop 10: Pet Details Profile Form -->
+    <main>
+      <section class="pet-details-container">
+        <h2>Pet Details</h2>
+
+        <!-- Pet Profile Image & Name -->
+        <div class="pet-avatar-wrapper">
+          <img
+            src="images/rufus-profile.jpg"
+            alt="Rufus the dog"
+            class="pet-avatar"
+          />
+          <p class="pet-name">Rufus</p>
+        </div>
+
+        <!-- Pet Details Form -->
+        <form class="pet-details-form">
+          <div class="form-group">
+            <label for="pet-breed" class="sr-only">Breed</label>
+            <input
+              type="text"
+              id="pet-breed"
+              name="breed"
+              placeholder="Breed"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="pet-species" class="sr-only">Species</label>
+            <input
+              type="text"
+              id="pet-species"
+              name="species"
+              placeholder="Species"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="pet-age" class="sr-only">Age</label>
+            <input type="text" id="pet-age" name="age" placeholder="Age" />
+          </div>
+
+          <button type="submit" class="btn-save">Save</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
