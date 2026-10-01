@@ -35,18 +35,46 @@
         app:layout_constraintTop_toTopOf="@+id/cardView2"
         app:layout_constraintVertical_bias="0.942" />
 
-    <TextView
-        android:id="@+id/txtPetSize"
+    <LinearLayout
+        android:id="@+id/customerDetails"
         android:layout_width="283dp"
-        android:layout_height="66dp"
-        android:background="#D9D9D9"
-        android:gravity="center"
-        android:hint="Pet Size"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cardView2"
-        app:layout_constraintVertical_bias="0.47" />
+        app:layout_constraintVertical_bias="0.47">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#D9D9D9"
+            android:gravity="center"
+            android:hint="Full Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="#D9D9D9"
+            android:gravity="center"
+            android:hint="Phone Number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="#D9D9D9"
+            android:gravity="center"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
@@ -73,6 +101,7 @@
         android:background="#D9D9D9"
         android:gravity="center"
         android:text="Selected Service/s"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
