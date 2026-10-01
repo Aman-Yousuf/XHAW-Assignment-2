@@ -30,9 +30,6 @@
             android:name=".HomePage"
             android:exported="false" />
         <activity
-            android:name=".IndividualCoursePage"
-            android:exported="false" />
-        <activity
             android:name=".CoursesListPage"
             android:exported="false" />
         <activity

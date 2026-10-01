@@ -36,7 +36,7 @@
         android:id="@+id/checkBathAndDry"
         android:layout_width="176dp"
         android:layout_height="56dp"
-        android:text="Bath and Dry"
+        android:text="Pet Grooming - R1500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
@@ -44,17 +44,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.651" />
 
-    <CheckBox
-        android:id="@+id/checkHaircutAndTrim"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
-        android:text="Haircut and Trim"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.734" />
+
 
     <Button
         android:id="@+id/btnConfirmSelection3"
@@ -70,29 +60,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.976" />
 
-    <CheckBox
-        android:id="@+id/checkNailClippng"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
-        android:text="Nail Clipping"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.817" />
-
-    <CheckBox
-        android:id="@+id/checkBrushingAndDeshedding"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
-        android:text="Brushing and De-shedding"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"

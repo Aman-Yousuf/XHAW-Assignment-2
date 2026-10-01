@@ -70,7 +70,7 @@
         android:id="@+id/checkPetSitting"
         android:layout_width="176dp"
         android:layout_height="56dp"
-        android:text="Pet sitting"
+        android:text="Pet First Aid- R750"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
@@ -78,35 +78,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68" />
 
-    <CheckBox
-        android:id="@+id/checkPetBoarding"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
-        android:text="Pet Boarding"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.928" />
 
-    <CheckBox
-        android:id="@+id/checkDayCare"
-        android:layout_width="176dp"
-        android:layout_height="56dp"
-        android:text="Day Care"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.051"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
 
     <CheckBox
         android:id="@+id/checkDogWalking"
         android:layout_width="176dp"
         android:layout_height="56dp"
-        android:text="Dog Walking"
+        android:text="Pet Business Management - R1500"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.051"
