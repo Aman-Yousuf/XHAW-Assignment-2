@@ -645,3 +645,158 @@ body:has(.grooming-services-container) {
     line-height: 1.7;
   }
 }
+
+/* TRAINING PROGRAM PAGE */
+
+/* Paw-print background for this page only */
+body:has(.training-program-container) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Main page spacing */
+.training-program-container {
+  padding: 20px 0 50px;
+}
+
+/* Wide training hero image */
+.training-program-image {
+  position: relative;
+  width: 96%;
+  max-width: none;
+  height: 420px;
+  margin: 10px auto 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.training-program-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+/* Teal title pill on the left */
+.training-program-title {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  width: fit-content;
+  max-width: calc(100% - 30px);
+  padding: 6px 14px;
+  background-color: #0a8f9c;
+  color: #000;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.training-program-title h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Training information box */
+.training-info-box {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 25px 30px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Introductory paragraph */
+.training-info-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Section heading */
+.training-info-box h3 {
+  font-size: 1.15rem;
+  color: #065f68;
+  margin-bottom: 14px;
+}
+
+/* Training services list */
+.training-info-box ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.training-info-box li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Align Book Now button to the right */
+.training-action-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* Compact teal Book Now pill */
+.training-btn-book {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #0a8f9c;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.training-btn-book:hover {
+  background-color: #065f68;
+  color: #000;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 600px) {
+  .training-program-image {
+    height: 280px;
+  }
+
+  .training-program-title {
+    left: 15px;
+    padding: 6px 12px;
+  }
+
+  .training-program-title h2 {
+    font-size: 0.9rem;
+  }
+
+  .training-info-box {
+    width: 92%;
+    padding: 22px 20px;
+  }
+
+  .training-info-box p,
+  .training-info-box li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
