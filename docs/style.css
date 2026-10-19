@@ -488,3 +488,160 @@ body:has(.other-activities-container) {
     line-height: 1.7;
   }
 }
+
+/* ========================================
+   GROOMING SERVICES PAGE
+   ======================================== */
+
+/* Paw-print background for this page only */
+body:has(.grooming-services-container) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Main page spacing */
+.grooming-services-container {
+  padding: 20px 0 50px;
+}
+
+/* Wide hero image */
+.grooming-services-image {
+  position: relative;
+  width: 96%;
+  max-width: none;
+  height: 420px;
+  margin: 10px auto 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.grooming-services-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Teal title pill on the left */
+.grooming-services-title {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  width: fit-content;
+  max-width: calc(100% - 30px);
+  padding: 6px 14px;
+  background-color: #0a8f9c;
+  color: #000;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.grooming-services-title h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Readable grooming information */
+.grooming-info-box {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 25px 30px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Introductory paragraph */
+.grooming-info-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Section heading */
+.grooming-info-box h3 {
+  font-size: 1.15rem;
+  color: #065f68;
+  margin-bottom: 14px;
+}
+
+/* Grooming services list */
+.grooming-info-box ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.grooming-info-box li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Align Book Now to the right */
+.grooming-action-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* Teal Book Now pill */
+.grooming-btn-book {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #0a8f9c;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.grooming-btn-book:hover {
+  background-color: #065f68;
+  color: #000;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 600px) {
+  .grooming-services-image {
+    height: 280px;
+  }
+
+  .grooming-services-title {
+    right: 15px;
+    padding: 6px 12px;
+  }
+
+  .grooming-services-title h2 {
+    font-size: 0.9rem;
+  }
+
+  .grooming-info-box {
+    width: 92%;
+    padding: 22px 20px;
+  }
+
+  .grooming-info-box p,
+  .grooming-info-box li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
