@@ -187,8 +187,7 @@ body:has(.confirmation-container) nav a:hover {
   }
 }
 
-/*PET DETAILS PAGE
-   Centred profile, form and Save button*/
+/*PET DETAILS PAGE: Centred profile, form and Save button*/
 
 .pet-details-container {
   display: flex;
@@ -217,7 +216,7 @@ body:has(.confirmation-container) nav a:hover {
   margin-bottom: 25px;
 }
 
-/* Force the pet profile image to display as a circle */
+/* circle pet picture*/
 
 .pet-details-container .pet-avatar-wrapper img.pet-avatar {
   display: block !important;
@@ -327,4 +326,165 @@ body:has(.pet-details-container) {
 .pet-details-container {
   background-color: rgba(255, 255, 255, 0.85);
   border-radius: 16px;
+}
+
+/* OTHER ACTIVITIES IMAGE AND TITLE */
+
+.other-activities-image {
+  position: relative;
+  width: 96%;
+  max-width: none;
+  height: 350px;
+  margin: 10px auto 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.other-activities-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Compact title pill on the right side */
+.other-activities-title {
+  position: absolute;
+  top: 50%;
+  right: 40px;
+  transform: translateY(-50%);
+  width: fit-content;
+  padding: 6px 14px;
+  background-color: #0a8f9c;
+  color: white;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.other-activities-title h2 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.other-activities-container {
+  padding: 20px 0 50px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .other-activities-image {
+    height: 240px;
+  }
+
+  .other-activities-title {
+    right: 15px;
+    padding: 6px 12px;
+  }
+
+  .other-activities-title h2 {
+    font-size: 0.9rem;
+  }
+}
+
+.btn-book {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #0a8f9c;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-book:hover {
+  background-color: #065f68;
+}
+
+/* Move the Book Now button to the right */
+.action-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+/* Black text on both teal pills */
+.other-activities-title,
+.other-activities-title h2,
+.btn-book {
+  color: #000;
+}
+
+/* Paw-print background for the Other Activities page */
+body:has(.other-activities-container) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* OTHER ACTIVITIES - CONTENT BOX */
+
+.other-activities-container .service-info-box {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 30px 35px;
+  background-color: rgba(255, 255, 255, 0.94);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Introductory paragraph */
+.other-activities-container .service-info-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Activities heading */
+.other-activities-container .service-info-box h3 {
+  font-size: 1.15rem;
+  color: #065f68;
+  margin-bottom: 14px;
+}
+
+/* Activities list */
+.other-activities-container .service-info-box ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.other-activities-container .service-info-box li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Comfortable spacing on mobile */
+@media (max-width: 600px) {
+  .other-activities-container .service-info-box {
+    width: 92%;
+    padding: 22px 20px;
+  }
+
+  .other-activities-container .service-info-box p,
+  .other-activities-container .service-info-box li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
 }
