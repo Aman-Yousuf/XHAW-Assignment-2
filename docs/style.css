@@ -1,4 +1,64 @@
-/* Contact page background */
+/*GENERAL WEBSITE STYLES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+/*GENERAL HEADER AND NAVIGATION */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.brand,
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img,
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.brand span {
+  border-left: 2px solid #000;
+  padding-left: 12px;
+  font-size: 0.9rem;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #0a8f9c;
+}
+
+nav a:hover {
+  color: #065f68;
+}
+
+/* CONTACT PAGE
+   Paw-print background and map styling*/
+
 .contact-container {
   background-image: url("images/pawPrint.jpeg");
   background-size: cover;
@@ -6,7 +66,6 @@
   background-repeat: no-repeat;
 }
 
-/* Google Maps block on the Contact page */
 .map-container {
   max-width: 600px;
   margin: 25px 0;
@@ -22,4 +81,118 @@
   height: 250px;
   border: none;
   border-radius: 8px;
+}
+
+/* BOOKING CONFIRMATION PAGE
+   Cat-and-dog background ONLY on this page*/
+
+body:has(.confirmation-container) {
+  background:
+    linear-gradient(rgba(225, 243, 247, 0.75), rgba(225, 243, 247, 0.75)),
+    url("images/cat_dog.jpeg") right bottom / cover no-repeat;
+
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Booking confirmation header */
+
+body:has(.confirmation-container) header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+body:has(.confirmation-container) .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+body:has(.confirmation-container) .logo img {
+  height: 60px;
+  width: auto;
+}
+
+body:has(.confirmation-container) .logo h2 {
+  border-left: 2px solid #000;
+  padding-left: 12px;
+  font-size: 0.9rem;
+}
+
+/* Booking confirmation navigation */
+
+body:has(.confirmation-container) nav {
+  display: flex;
+  gap: 25px;
+}
+
+body:has(.confirmation-container) nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #0a8f9c;
+}
+
+body:has(.confirmation-container) nav a:hover {
+  color: #065f68;
+}
+
+/* Confirmation wording and spacing */
+
+.confirmation-container {
+  max-width: 600px;
+  padding: 60px 90px;
+  background: transparent;
+}
+
+.confirmation-container h2 {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+.confirmation-container h3 {
+  font-size: 0.95rem;
+  margin: 30px 0 10px;
+}
+
+.confirmation-container p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.confirmation-container .confirmation-subtext {
+  margin-bottom: 20px;
+}
+
+/* Booking confirmation logo divider */
+
+body:has(.confirmation-container) .logo h2 {
+  border-left: 2px solid #000;
+  padding-left: 12px;
+}
+
+/*SMALL SCREEN ADJUSTMENTS*/
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .confirmation-container {
+    padding: 35px 25px;
+  }
+
+  .map-container {
+    max-width: 100%;
+  }
 }
