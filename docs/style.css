@@ -1,4 +1,4 @@
-/*GENERAL WEBSITE STYLES */
+/*GENERAL WEBSITE STYLES*/
 
 * {
   margin: 0;
@@ -11,7 +11,7 @@ body {
   min-height: 100vh;
 }
 
-/*GENERAL HEADER AND NAVIGATION */
+/*GENERAL HEADER AND NAVIGATION*/
 
 header {
   display: flex;
@@ -56,8 +56,8 @@ nav a:hover {
   color: #065f68;
 }
 
-/* CONTACT PAGE
-   Paw-print background and map styling*/
+/*CONTACT PAGE
+Paw-print background and map styling*/
 
 .contact-container {
   background-image: url("images/pawPrint.jpeg");
@@ -83,14 +83,13 @@ nav a:hover {
   border-radius: 8px;
 }
 
-/* BOOKING CONFIRMATION PAGE
+/*BOOKING CONFIRMATION PAGE
    Cat-and-dog background ONLY on this page*/
 
 body:has(.confirmation-container) {
   background:
     linear-gradient(rgba(225, 243, 247, 0.75), rgba(225, 243, 247, 0.75)),
     url("images/cat_dog.jpeg") right bottom / cover no-repeat;
-
   background-attachment: fixed;
   min-height: 100vh;
 }
@@ -120,8 +119,6 @@ body:has(.confirmation-container) .logo h2 {
   padding-left: 12px;
   font-size: 0.9rem;
 }
-
-/* Booking confirmation navigation */
 
 body:has(.confirmation-container) nav {
   display: flex;
@@ -167,13 +164,6 @@ body:has(.confirmation-container) nav a:hover {
   margin-bottom: 20px;
 }
 
-/* Booking confirmation logo divider */
-
-body:has(.confirmation-container) .logo h2 {
-  border-left: 2px solid #000;
-  padding-left: 12px;
-}
-
 /*SMALL SCREEN ADJUSTMENTS*/
 
 @media (max-width: 768px) {
@@ -195,4 +185,146 @@ body:has(.confirmation-container) .logo h2 {
   .map-container {
     max-width: 100%;
   }
+}
+
+/*PET DETAILS PAGE
+   Centred profile, form and Save button*/
+
+.pet-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 20px;
+}
+
+.pet-details-container > h2 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+/* Centre the circular dog image and pet name */
+
+.pet-avatar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* Force the pet profile image to display as a circle */
+
+.pet-details-container .pet-avatar-wrapper img.pet-avatar {
+  display: block !important;
+  width: 160px !important;
+  height: 160px !important;
+  min-width: 160px;
+  min-height: 160px;
+  max-width: 160px !important;
+  max-height: 160px !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50% !important;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.pet-details-container .pet-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Breed, Species and Age form */
+
+.pet-details-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  gap: 18px;
+}
+
+.pet-details-form .form-group {
+  width: 100%;
+}
+
+.pet-details-form input {
+  display: block;
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  background-color: white;
+}
+
+.pet-details-form input:focus {
+  outline: 2px solid #0a8f9c;
+  border-color: #0a8f9c;
+}
+
+/* Save button at the bottom */
+
+.pet-details-form .btn-save {
+  display: block;
+  width: 160px;
+  padding: 12px 20px;
+  margin: 8px auto 0;
+  border: none;
+  border-radius: 8px;
+  background-color: #0a8f9c;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pet-details-form .btn-save:hover {
+  background-color: #065f68;
+}
+
+/* Centre the layout on smaller screens */
+
+@media (max-width: 600px) {
+  .pet-details-container {
+    padding: 25px 15px;
+  }
+
+  .pet-details-container .pet-avatar-wrapper img.pet-avatar {
+    width: 140px !important;
+    height: 140px !important;
+    min-width: 140px;
+    min-height: 140px;
+    max-width: 140px !important;
+    max-height: 140px !important;
+  }
+
+  .pet-details-form {
+    max-width: 100%;
+  }
+}
+
+/* Pet Details page paw-print background */
+body:has(.pet-details-container) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Keep the Pet Details content readable */
+.pet-details-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
 }
