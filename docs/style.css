@@ -1052,9 +1052,7 @@ body:has(.pet-care-container) {
   color: #ffffff;
 }
 
-/* ========================================
-   COURSE FEES PAGE
-   ======================================== */
+/* COURSE FEES PAGE*/
 
 /* Paw-print background for the fees page only */
 body:has(.calculator-section) {
@@ -1174,4 +1172,75 @@ body:has(.courses-container) {
   background: url("./images/pawPrint.jpeg") repeat fixed center;
   background-size: cover;
   min-height: 100vh;
+}
+
+/* Cozy Pets image positioned at the bottom-right */
+body:has(.home-page) .cozypets-corner {
+  position: fixed;
+  right: 25px;
+  bottom: 20px;
+  z-index: 5;
+}
+
+body:has(.home-page) .cozypets-corner img {
+  display: block;
+  width: 140px;
+  height: auto;
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.hero {
+  position: relative;
+  min-height: 480px;
+  background-color: #20a9ad;
+  background-image: url("images/paws.png");
+  background-repeat: repeat;
+  background-size: 180px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding: 40px 5%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 45%;
+}
+
+.hero-content h1 {
+  color: white;
+  font-size: 38px;
+}
+
+.hero-content p {
+  color: white;
+  font-size: 18px;
+}
+
+.book-button {
+  display: inline-block;
+  background: #eeeeee;
+  color: #111111;
+  padding: 15px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.hero-pets {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 35%;
+  max-width: 300px;
+  max-height: 85%;
+  height: auto;
+  object-fit: contain;
+  object-position: bottom right;
+  z-index: 1;
+  pointer-events: none;
 }
