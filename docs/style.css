@@ -1019,3 +1019,159 @@ body:has(.pet-care-container) {
     font-size: 0.9rem;
   }
 }
+
+/* Align Get a Quote button to the right */
+.grooming-action-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* Grooming Page - Get a Quote Pill Button */
+.grooming-services-container .grooming-btn-quote {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a8f9c;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.4;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.grooming-services-container .grooming-btn-quote:hover {
+  background-color: #065f68;
+  color: #ffffff;
+}
+
+/* ========================================
+   COURSE FEES PAGE
+   ======================================== */
+
+/* Paw-print background for the fees page only */
+body:has(.calculator-section) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Course Fee Estimator styling */
+.calculator-section {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px auto 50px;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.88);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.calculator-section h2 {
+  color: #065f68;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.calculator-section > p {
+  color: #333;
+  text-align: center;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.calculator-section fieldset {
+  border: 1px solid #b8d8da;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.calculator-section legend {
+  color: #065f68;
+  font-weight: bold;
+  padding: 0 8px;
+}
+
+.calculator-section label {
+  color: #333;
+}
+
+.calculator-section input[type="text"],
+.calculator-section input[type="tel"],
+.calculator-section input[type="email"] {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin: 6px 0 14px;
+  border: 1px solid #b8d8da;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.calculator-section input[type="checkbox"] {
+  accent-color: #0a8f9c;
+  margin-right: 8px;
+}
+
+.calculator-section fieldset div {
+  margin-bottom: 12px;
+}
+
+#btn-calculate {
+  padding: 10px 20px;
+  background-color: #0a8f9c;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#btn-calculate:hover {
+  background-color: #065f68;
+  color: #fff;
+}
+
+.total-display {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #fff;
+  border-left: 4px solid #0a8f9c;
+}
+
+.total-display h3 {
+  color: #065f68;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+}
+
+.calculator-section {
+  width: 94%;
+  padding: 20px;
+}
+
+.calculator-section fieldset {
+  padding: 15px;
+}
+
+/* Paw-print background for the Courses page */
+body:has(.courses-container) {
+  background: url("./images/pawPrint.jpeg") repeat fixed center;
+  background-size: cover;
+  min-height: 100vh;
+}
