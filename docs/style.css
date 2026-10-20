@@ -800,3 +800,158 @@ body:has(.training-program-container) {
     line-height: 1.7;
   }
 }
+
+/*PET CARE SERVICES PAGE*/
+
+/* Paw-print background for this page only */
+body:has(.pet-care-container) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Main page spacing */
+.pet-care-container {
+  padding: 20px 0 50px;
+}
+
+/* Wide pet care hero image */
+.pet-care-image {
+  position: relative;
+  width: 96%;
+  max-width: none;
+  height: 380px;
+  margin: 10px auto 30px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.pet-care-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+/* Teal title pill on the left */
+.pet-care-title {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  width: fit-content;
+  max-width: calc(100% - 30px);
+  padding: 6px 14px;
+  background-color: #0a8f9c;
+  color: #000;
+  border-radius: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.pet-care-title h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+/* Pet care information box */
+.pet-care-info-box {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  padding: 25px 30px;
+  background-color: rgba(255, 255, 255, 0.82);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Introductory paragraph */
+.pet-care-info-box p {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 22px;
+}
+
+/* Section heading */
+.pet-care-info-box h3 {
+  font-size: 1.15rem;
+  color: #065f68;
+  margin-bottom: 14px;
+}
+
+/* Pet care services list */
+.pet-care-info-box ul {
+  padding-left: 25px;
+  margin: 0;
+}
+
+.pet-care-info-box li {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Align Book Now button to the right */
+.pet-care-action-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 96%;
+  margin: 0 auto;
+}
+
+/* Compact teal Book Now pill */
+.pet-care-btn-book {
+  display: inline-block;
+  width: fit-content;
+  padding: 8px 16px;
+  background-color: #0a8f9c;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pet-care-btn-book:hover {
+  background-color: #065f68;
+  color: #000;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 600px) {
+  .pet-care-image {
+    height: 280px;
+  }
+
+  .pet-care-title {
+    left: 15px;
+    padding: 6px 12px;
+  }
+
+  .pet-care-title h2 {
+    font-size: 0.9rem;
+  }
+
+  .pet-care-info-box {
+    width: 92%;
+    padding: 22px 20px;
+  }
+
+  .pet-care-info-box p,
+  .pet-care-info-box li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+}
