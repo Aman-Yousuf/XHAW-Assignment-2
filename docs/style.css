@@ -955,3 +955,67 @@ body:has(.pet-care-container) {
     line-height: 1.7;
   }
 }
+
+/*COURSES PAGE*/
+
+.courses-container {
+  width: 92%;
+  max-width: 1100px;
+  margin: 30px auto 50px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-sizing: border-box;
+}
+
+.courses-container h1 {
+  color: #065f68;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.courses-container > p {
+  text-align: center;
+  color: #333;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.courses-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.courses-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+}
+
+.courses-table-container th,
+.courses-table-container td {
+  padding: 14px 16px;
+  border: 1px solid #d6e3e3;
+  text-align: left;
+}
+
+.courses-table-container th {
+  background-color: #0a8f9c;
+  color: #fff;
+}
+
+.courses-table-container tbody tr {
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .courses-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .courses-table-container th,
+  .courses-table-container td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
