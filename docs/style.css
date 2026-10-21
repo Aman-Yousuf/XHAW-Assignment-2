@@ -1244,3 +1244,36 @@ body:has(.home-page) .cozypets-corner img {
   z-index: 1;
   pointer-events: none;
 }
+
+/* Course Discounts Section */
+.courses-container .course-discounts {
+  margin-top: 25px;
+  padding: 22px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #d6e3e3;
+  border-left: 5px solid #0a8f9c;
+  border-radius: 10px;
+}
+
+.course-discounts h2 {
+  color: #065f68;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.course-discounts p {
+  color: #333;
+  line-height: 1.6;
+}
+
+.course-discounts ul {
+  padding-left: 25px;
+  line-height: 2;
+  color: #333;
+}
+
+.course-discounts .discount-note {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
