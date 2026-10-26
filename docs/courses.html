@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -5,10 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Courses - Pawsitive Pet Academy</title>
     <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .courses-container {
+        width: 96%;
+        margin: 0 auto;
+        padding: 20px 0 40px;
+      }
+
+      .service-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 15px;
+        margin: 25px 0 30px;
+      }
+
+      .service-card {
+        padding: 16px;
+        min-width: 0;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+        text-align: center;
+      }
+
+      .service-card h2 {
+        font-size: 1.1rem;
+        margin: 0 0 12px;
+      }
+
+      .service-card a {
+        display: inline-block;
+        padding: 8px 14px;
+        background: #0a8f9c;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 6px;
+      }
+
+      .service-card a:hover {
+        background: #065f68;
+      }
+
+      .fees-glance {
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+        overflow-x: auto;
+      }
+
+      .fees-glance h2 {
+        margin-top: 0;
+        color: #065f68;
+      }
+
+      .fees-glance table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      .fees-glance th,
+      .fees-glance td {
+        padding: 12px;
+        border: 1px solid #dddddd;
+        text-align: left;
+      }
+
+      .fees-glance th {
+        background: #0a8f9c;
+        color: #ffffff;
+      }
+
+      .fees-glance tbody tr:nth-child(even) {
+        background: #f2f2f2;
+      }
+
+      @media (max-width: 600px) {
+        .service-cards {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 10px;
+        }
+
+        .service-card {
+          padding: 12px;
+        }
+
+        .service-card h2 {
+          font-size: 1rem;
+        }
+
+        .fees-glance {
+          padding: 12px;
+        }
+
+        .fees-glance th,
+        .fees-glance td {
+          padding: 8px;
+          font-size: 0.9rem;
+        }
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Header and Navigation -->
     <header>
       <div class="brand">
         <img src="images/logo.jpeg" alt="Pawsitive Pet Academy Logo" />
@@ -24,7 +128,6 @@
       </nav>
     </header>
 
-    <!-- Courses Page Content -->
     <main>
       <section class="courses-container">
         <h1>Our Courses</h1>
@@ -35,64 +138,91 @@
           Explore our courses below.
         </p>
 
-        <!-- Course Information Table -->
-        <div class="courses-table-container">
+        <!-- Course Cards -->
+        <div class="service-cards">
+          <div class="service-card">
+            <h2>Canine Obedience Training</h2>
+            <a href="canine-obedience.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h2>Pet Grooming</h2>
+            <a href="pet-grooming.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h2>Animal Behaviour</h2>
+            <a href="animal-behaviour.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h2>Pet Business Management</h2>
+            <a href="pet-business-management.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h2>Puppy Care</h2>
+            <a href="puppy-care.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h2>Pet First Aid</h2>
+            <a href="pet-first-aid.html">Learn More</a>
+          </div>
+
+          <div class="service-card">
+            <h2>Basic Dog Walking</h2>
+            <a href="basic-dog-walking.html">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Fees at a Glance Table -->
+        <div class="fees-glance">
+          <h2>Fees at a Glance</h2>
+
           <table>
             <thead>
               <tr>
-                <th>Course Name</th>
+                <th>Course</th>
                 <th>Duration</th>
                 <th>Fee</th>
               </tr>
             </thead>
 
             <tbody>
-              <!-- Six-month programme courses as specified in the brief -->
               <tr>
-                <td>
-                  <a href="canine-obedience.html">Canine Obedience Training</a>
-                </td>
+                <td>Canine Obedience Training</td>
                 <td>12 weeks</td>
                 <td>R1,500</td>
               </tr>
-
               <tr>
-                <td><a href="pet-grooming.html">Pet Grooming</a></td>
+                <td>Pet Grooming</td>
                 <td>12 weeks</td>
                 <td>R1,500</td>
               </tr>
-
               <tr>
-                <td><a href="animal-behaviour.html">Animal Behaviour</a></td>
+                <td>Animal Behaviour</td>
                 <td>12 weeks</td>
                 <td>R1,500</td>
               </tr>
-
               <tr>
-                <td>
-                  <a href="pet-business-management.html"
-                    >Pet Business Management</a
-                  >
-                </td>
+                <td>Pet Business Management</td>
                 <td>12 weeks</td>
                 <td>R1,500</td>
               </tr>
-
-              <!-- Six-week short courses -->
               <tr>
-                <td><a href="puppy-care.html">Puppy Care</a></td>
+                <td>Puppy Care</td>
                 <td>6 weeks</td>
                 <td>R750</td>
               </tr>
-
               <tr>
-                <td><a href="pet-first-aid.html">Pet First Aid</a></td>
+                <td>Pet First Aid</td>
                 <td>6 weeks</td>
                 <td>R750</td>
               </tr>
-
               <tr>
-                <td><a href="dog-walking.html">Basic Dog Walking</a></td>
+                <td>Basic Dog Walking</a>
+                </td>
                 <td>6 weeks</td>
                 <td>R750</td>
               </tr>
@@ -100,24 +230,25 @@
           </table>
         </div>
 
-        <!-- Course Discount Information -->
-        <div class="course-discounts">
-          <h3>Course Discounts</h3>
-          <p>Save more when you enrol in multiple courses!</p>
+<!-- Course Discounts -->
+<div class="course-discounts">
+  <h2>Course Discounts</h2>
+  <p>Save more when you enrol in multiple courses!</p>
 
-          <ul>
-            <li><strong>1 course:</strong> No discount</li>
-            <li><strong>2 courses:</strong> 5% discount</li>
-            <li><strong>3 courses:</strong> 10% discount</li>
-            <li><strong>More than 3 courses:</strong> 15% discount</li>
-          </ul>
+  <ul>
+    <li><strong>1 course:</strong> No discount</li>
+    <li><strong>2 courses:</strong> 5% discount</li>
+    <li><strong>3 courses:</strong> 10% discount</li>
+    <li><strong>More than 3 courses:</strong> 15% discount</li>
+  </ul>
 
-          <p class="discount-note">
-            Discounts are based on the total course fees and apply when you
-            enrol in multiple courses.
-          </p>
-        </div>
+  <p class="discount-note">
+    Discounts are based on the total course fees and apply when you
+    enrol in multiple courses.
+  </p>
+</div>
       </section>
     </main>
   </body>
 </html>
+```
