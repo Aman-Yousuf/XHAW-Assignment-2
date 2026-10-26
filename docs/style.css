@@ -1,4 +1,5 @@
-/*GENERAL WEBSITE STYLES*/
+
+/* GENERAL WEBSITE STYLES */
 
 * {
   margin: 0;
@@ -11,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/*GENERAL HEADER AND NAVIGATION*/
+/* GENERAL HEADER AND NAVIGATION */
 
 header {
   display: flex;
@@ -56,8 +57,7 @@ nav a:hover {
   color: #065f68;
 }
 
-/*CONTACT PAGE
-Paw-print background and map styling*/
+/* CONTACT PAGE */
 
 .contact-container {
   background-image: url("images/pawPrint.jpeg");
@@ -83,8 +83,7 @@ Paw-print background and map styling*/
   border-radius: 8px;
 }
 
-/*BOOKING CONFIRMATION PAGE
-   Cat-and-dog background ONLY on this page*/
+/* BOOKING CONFIRMATION PAGE */
 
 body:has(.confirmation-container) {
   background:
@@ -93,8 +92,6 @@ body:has(.confirmation-container) {
   background-attachment: fixed;
   min-height: 100vh;
 }
-
-/* Booking confirmation header */
 
 body:has(.confirmation-container) header {
   display: flex;
@@ -137,8 +134,6 @@ body:has(.confirmation-container) nav a:hover {
   color: #065f68;
 }
 
-/* Confirmation wording and spacing */
-
 .confirmation-container {
   max-width: 600px;
   padding: 60px 90px;
@@ -164,7 +159,7 @@ body:has(.confirmation-container) nav a:hover {
   margin-bottom: 20px;
 }
 
-/*SMALL SCREEN ADJUSTMENTS*/
+/* SMALL SCREEN ADJUSTMENTS */
 
 @media (max-width: 768px) {
   header {
@@ -187,7 +182,7 @@ body:has(.confirmation-container) nav a:hover {
   }
 }
 
-/*PET DETAILS PAGE: Centred profile, form and Save button*/
+/* PET DETAILS PAGE */
 
 .pet-details-container {
   display: flex;
@@ -205,8 +200,6 @@ body:has(.confirmation-container) nav a:hover {
   margin-bottom: 25px;
 }
 
-/* Centre the circular dog image and pet name */
-
 .pet-avatar-wrapper {
   display: flex;
   flex-direction: column;
@@ -215,8 +208,6 @@ body:has(.confirmation-container) nav a:hover {
   width: 100%;
   margin-bottom: 25px;
 }
-
-/* circle pet picture*/
 
 .pet-details-container .pet-avatar-wrapper img.pet-avatar {
   display: block !important;
@@ -239,8 +230,6 @@ body:has(.confirmation-container) nav a:hover {
   margin-top: 12px;
   text-align: center;
 }
-
-/* Breed, Species and Age form */
 
 .pet-details-form {
   display: flex;
@@ -271,8 +260,6 @@ body:has(.confirmation-container) nav a:hover {
   border-color: #0a8f9c;
 }
 
-/* Save button at the bottom */
-
 .pet-details-form .btn-save {
   display: block;
   width: 160px;
@@ -291,7 +278,19 @@ body:has(.confirmation-container) nav a:hover {
   background-color: #065f68;
 }
 
-/* Centre the layout on smaller screens */
+body:has(.pet-details-container) {
+  background-image: url("images/pawPrint.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.pet-details-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+}
 
 @media (max-width: 600px) {
   .pet-details-container {
@@ -310,22 +309,6 @@ body:has(.confirmation-container) nav a:hover {
   .pet-details-form {
     max-width: 100%;
   }
-}
-
-/* Pet Details page paw-print background */
-body:has(.pet-details-container) {
-  background-image: url("images/pawPrint.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-height: 100vh;
-}
-
-/* Keep the Pet Details content readable */
-.pet-details-container {
-  background-color: rgba(255, 255, 255, 0.85);
-  border-radius: 16px;
 }
 
 /* OTHER ACTIVITIES IMAGE AND TITLE */
@@ -348,7 +331,6 @@ body:has(.pet-details-container) {
   object-position: center;
 }
 
-/* Compact title pill on the right side */
 .other-activities-title {
   position: absolute;
   top: 50%;
@@ -372,22 +354,6 @@ body:has(.pet-details-container) {
   padding: 20px 0 50px;
 }
 
-/* Mobile layout */
-@media (max-width: 600px) {
-  .other-activities-image {
-    height: 240px;
-  }
-
-  .other-activities-title {
-    right: 15px;
-    padding: 6px 12px;
-  }
-
-  .other-activities-title h2 {
-    font-size: 0.9rem;
-  }
-}
-
 .btn-book {
   display: inline-block;
   width: fit-content;
@@ -408,7 +374,6 @@ body:has(.pet-details-container) {
   background-color: #065f68;
 }
 
-/* Move the Book Now button to the right */
 .action-container {
   display: flex;
   justify-content: flex-end;
@@ -418,14 +383,12 @@ body:has(.pet-details-container) {
   box-sizing: border-box;
 }
 
-/* Black text on both teal pills */
 .other-activities-title,
 .other-activities-title h2,
 .btn-book {
   color: #000;
 }
 
-/* Paw-print background for the Other Activities page */
 body:has(.other-activities-container) {
   background-image: url("images/pawPrint.jpeg");
   background-size: cover;
@@ -434,8 +397,6 @@ body:has(.other-activities-container) {
   background-attachment: fixed;
   min-height: 100vh;
 }
-
-/* OTHER ACTIVITIES - CONTENT BOX */
 
 .other-activities-container .service-info-box {
   width: 90%;
@@ -447,7 +408,6 @@ body:has(.other-activities-container) {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-/* Introductory paragraph */
 .other-activities-container .service-info-box p {
   font-size: 1rem;
   line-height: 1.8;
@@ -455,14 +415,12 @@ body:has(.other-activities-container) {
   margin-bottom: 22px;
 }
 
-/* Activities heading */
 .other-activities-container .service-info-box h3 {
   font-size: 1.15rem;
   color: #065f68;
   margin-bottom: 14px;
 }
 
-/* Activities list */
 .other-activities-container .service-info-box ul {
   padding-left: 25px;
   margin: 0;
@@ -475,8 +433,20 @@ body:has(.other-activities-container) {
   margin-bottom: 8px;
 }
 
-/* Comfortable spacing on mobile */
 @media (max-width: 600px) {
+  .other-activities-image {
+    height: 240px;
+  }
+
+  .other-activities-title {
+    right: 15px;
+    padding: 6px 12px;
+  }
+
+  .other-activities-title h2 {
+    font-size: 0.9rem;
+  }
+
   .other-activities-container .service-info-box {
     width: 92%;
     padding: 22px 20px;
@@ -489,11 +459,8 @@ body:has(.other-activities-container) {
   }
 }
 
-/* ========================================
-   GROOMING SERVICES PAGE
-   ======================================== */
+/* GROOMING SERVICES PAGE */
 
-/* Paw-print background for this page only */
 body:has(.grooming-services-container) {
   background-image: url("images/pawPrint.jpeg");
   background-size: cover;
@@ -503,12 +470,10 @@ body:has(.grooming-services-container) {
   min-height: 100vh;
 }
 
-/* Main page spacing */
 .grooming-services-container {
   padding: 20px 0 50px;
 }
 
-/* Wide hero image */
 .grooming-services-image {
   position: relative;
   width: 96%;
@@ -527,7 +492,6 @@ body:has(.grooming-services-container) {
   object-position: center;
 }
 
-/* Teal title pill on the left */
 .grooming-services-title {
   position: absolute;
   top: 50%;
@@ -549,7 +513,6 @@ body:has(.grooming-services-container) {
   color: #000;
 }
 
-/* Readable grooming information */
 .grooming-info-box {
   width: 90%;
   max-width: 900px;
@@ -561,7 +524,6 @@ body:has(.grooming-services-container) {
   box-shadow: none;
 }
 
-/* Introductory paragraph */
 .grooming-info-box p {
   font-size: 1rem;
   line-height: 1.8;
@@ -569,14 +531,12 @@ body:has(.grooming-services-container) {
   margin-bottom: 22px;
 }
 
-/* Section heading */
 .grooming-info-box h3 {
   font-size: 1.15rem;
   color: #065f68;
   margin-bottom: 14px;
 }
 
-/* Grooming services list */
 .grooming-info-box ul {
   padding-left: 25px;
   margin: 0;
@@ -589,15 +549,14 @@ body:has(.grooming-services-container) {
   margin-bottom: 8px;
 }
 
-/* Align Book Now to the right */
 .grooming-action-container {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 96%;
   margin: 0 auto;
 }
 
-/* Teal Book Now pill */
 .grooming-btn-book {
   display: inline-block;
   width: fit-content;
@@ -619,36 +578,30 @@ body:has(.grooming-services-container) {
   color: #000;
 }
 
-/* Responsive layout for mobile screens */
-@media (max-width: 600px) {
-  .grooming-services-image {
-    height: 280px;
-  }
+.grooming-services-container .grooming-btn-quote {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0a8f9c;
+  color: #000000;
+  text-decoration: none;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1.4;
+  appearance: none;
+  -webkit-appearance: none;
+}
 
-  .grooming-services-title {
-    right: 15px;
-    padding: 6px 12px;
-  }
-
-  .grooming-services-title h2 {
-    font-size: 0.9rem;
-  }
-
-  .grooming-info-box {
-    width: 92%;
-    padding: 22px 20px;
-  }
-
-  .grooming-info-box p,
-  .grooming-info-box li {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
+.grooming-services-container .grooming-btn-quote:hover {
+  background-color: #065f68;
+  color: #ffffff;
 }
 
 /* TRAINING PROGRAM PAGE */
 
-/* Paw-print background for this page only */
 body:has(.training-program-container) {
   background-image: url("images/pawPrint.jpeg");
   background-size: cover;
@@ -658,12 +611,10 @@ body:has(.training-program-container) {
   min-height: 100vh;
 }
 
-/* Main page spacing */
 .training-program-container {
   padding: 20px 0 50px;
 }
 
-/* Wide training hero image */
 .training-program-image {
   position: relative;
   width: 96%;
@@ -682,7 +633,6 @@ body:has(.training-program-container) {
   object-position: center 15%;
 }
 
-/* Teal title pill on the left */
 .training-program-title {
   position: absolute;
   top: 50%;
@@ -704,7 +654,6 @@ body:has(.training-program-container) {
   color: #000;
 }
 
-/* Training information box */
 .training-info-box {
   width: 90%;
   max-width: 900px;
@@ -716,7 +665,6 @@ body:has(.training-program-container) {
   box-shadow: none;
 }
 
-/* Introductory paragraph */
 .training-info-box p {
   font-size: 1rem;
   line-height: 1.8;
@@ -724,14 +672,12 @@ body:has(.training-program-container) {
   margin-bottom: 22px;
 }
 
-/* Section heading */
 .training-info-box h3 {
   font-size: 1.15rem;
   color: #065f68;
   margin-bottom: 14px;
 }
 
-/* Training services list */
 .training-info-box ul {
   padding-left: 25px;
   margin: 0;
@@ -744,7 +690,6 @@ body:has(.training-program-container) {
   margin-bottom: 8px;
 }
 
-/* Align Book Now button to the right */
 .training-action-container {
   display: flex;
   justify-content: flex-end;
@@ -752,7 +697,6 @@ body:has(.training-program-container) {
   margin: 0 auto;
 }
 
-/* Compact teal Book Now pill */
 .training-btn-book {
   display: inline-block;
   width: fit-content;
@@ -774,36 +718,8 @@ body:has(.training-program-container) {
   color: #000;
 }
 
-/* Responsive layout for mobile screens */
-@media (max-width: 600px) {
-  .training-program-image {
-    height: 280px;
-  }
+/* PET CARE SERVICES PAGE */
 
-  .training-program-title {
-    left: 15px;
-    padding: 6px 12px;
-  }
-
-  .training-program-title h2 {
-    font-size: 0.9rem;
-  }
-
-  .training-info-box {
-    width: 92%;
-    padding: 22px 20px;
-  }
-
-  .training-info-box p,
-  .training-info-box li {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-}
-
-/*PET CARE SERVICES PAGE*/
-
-/* Paw-print background for this page only */
 body:has(.pet-care-container) {
   background-image: url("images/pawPrint.jpeg");
   background-size: cover;
@@ -813,12 +729,10 @@ body:has(.pet-care-container) {
   min-height: 100vh;
 }
 
-/* Main page spacing */
 .pet-care-container {
   padding: 20px 0 50px;
 }
 
-/* Wide pet care hero image */
 .pet-care-image {
   position: relative;
   width: 96%;
@@ -837,7 +751,6 @@ body:has(.pet-care-container) {
   object-position: center 35%;
 }
 
-/* Teal title pill on the left */
 .pet-care-title {
   position: absolute;
   top: 50%;
@@ -859,7 +772,6 @@ body:has(.pet-care-container) {
   color: #000;
 }
 
-/* Pet care information box */
 .pet-care-info-box {
   width: 90%;
   max-width: 900px;
@@ -871,7 +783,6 @@ body:has(.pet-care-container) {
   box-shadow: none;
 }
 
-/* Introductory paragraph */
 .pet-care-info-box p {
   font-size: 1rem;
   line-height: 1.8;
@@ -879,14 +790,12 @@ body:has(.pet-care-container) {
   margin-bottom: 22px;
 }
 
-/* Section heading */
 .pet-care-info-box h3 {
   font-size: 1.15rem;
   color: #065f68;
   margin-bottom: 14px;
 }
 
-/* Pet care services list */
 .pet-care-info-box ul {
   padding-left: 25px;
   margin: 0;
@@ -899,7 +808,6 @@ body:has(.pet-care-container) {
   margin-bottom: 8px;
 }
 
-/* Align Book Now button to the right */
 .pet-care-action-container {
   display: flex;
   justify-content: flex-end;
@@ -907,7 +815,6 @@ body:has(.pet-care-container) {
   margin: 0 auto;
 }
 
-/* Compact teal Book Now pill */
 .pet-care-btn-book {
   display: inline-block;
   width: fit-content;
@@ -929,34 +836,7 @@ body:has(.pet-care-container) {
   color: #000;
 }
 
-/* Responsive layout for mobile screens */
-@media (max-width: 600px) {
-  .pet-care-image {
-    height: 280px;
-  }
-
-  .pet-care-title {
-    left: 15px;
-    padding: 6px 12px;
-  }
-
-  .pet-care-title h2 {
-    font-size: 0.9rem;
-  }
-
-  .pet-care-info-box {
-    width: 92%;
-    padding: 22px 20px;
-  }
-
-  .pet-care-info-box p,
-  .pet-care-info-box li {
-    font-size: 0.95rem;
-    line-height: 1.7;
-  }
-}
-
-/*COURSES PAGE*/
+/* COURSES PAGE */
 
 .courses-container {
   width: 92%;
@@ -1007,54 +887,46 @@ body:has(.pet-care-container) {
   background-color: #ffffff;
 }
 
-@media (max-width: 600px) {
-  .courses-container {
-    width: 95%;
-    padding: 15px;
-  }
-
-  .courses-table-container th,
-  .courses-table-container td {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
+body:has(.courses-container) {
+  background: url("./images/pawPrint.jpeg") repeat fixed center;
+  background-size: cover;
+  min-height: 100vh;
 }
 
-/* Align Get a Quote button to the right */
-.grooming-action-container {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 96%;
-  margin: 0 auto;
+.courses-container .course-discounts {
+  margin-top: 25px;
+  padding: 22px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #d6e3e3;
+  border-left: 5px solid #0a8f9c;
+  border-radius: 10px;
 }
 
-/* Grooming Page - Get a Quote Pill Button */
-.grooming-services-container .grooming-btn-quote {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0a8f9c;
-  color: #000000;
-  text-decoration: none;
-  border: none;
-  border-radius: 30px;
-  font-size: 1rem;
-  font-weight: bold;
-  text-align: center;
-  cursor: pointer;
-  line-height: 1.4;
-  appearance: none;
-  -webkit-appearance: none;
+.course-discounts h2 {
+  color: #065f68;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.grooming-services-container .grooming-btn-quote:hover {
-  background-color: #065f68;
-  color: #ffffff;
+.course-discounts p {
+  color: #333;
+  line-height: 1.6;
 }
 
-/* COURSE FEES PAGE*/
+.course-discounts ul {
+  padding-left: 25px;
+  line-height: 2;
+  color: #333;
+}
 
-/* Paw-print background for the fees page only */
+.course-discounts .discount-note {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* COURSE FEES PAGE */
+
 body:has(.calculator-section) {
   background-image: url("images/pawPrint.jpeg");
   background-size: cover;
@@ -1064,12 +936,11 @@ body:has(.calculator-section) {
   min-height: 100vh;
 }
 
-/* Course Fee Estimator styling */
 .calculator-section {
-  width: 90%;
+  width: 94%;
   max-width: 900px;
   margin: 30px auto 50px;
-  padding: 30px;
+  padding: 20px;
   box-sizing: border-box;
   background-color: rgba(255, 255, 255, 0.88);
   border: none;
@@ -1092,7 +963,7 @@ body:has(.calculator-section) {
 
 .calculator-section fieldset {
   border: 1px solid #b8d8da;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 22px;
 }
 
@@ -1155,125 +1026,130 @@ body:has(.calculator-section) {
   margin: 0;
 }
 
-@media (max-width: 600px) {
+/* HOME PAGE */
+
+body.home-page {
+  margin: 0;
+  padding: 0;
 }
 
-.calculator-section {
-  width: 94%;
-  padding: 20px;
-}
-
-.calculator-section fieldset {
-  padding: 15px;
-}
-
-/* Paw-print background for the Courses page */
-body:has(.courses-container) {
-  background: url("./images/pawPrint.jpeg") repeat fixed center;
+/* Combined cat, dog and paw-print banner */
+.home-page .home-hero {
+  width: 100%;
+  height: 520px;
+  background-color: white;
+  background-image: url("images/cozypets.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  min-height: 100vh;
-}
 
-/* Cozy Pets image positioned at the bottom-right */
-body:has(.home-page) .cozypets-corner {
-  position: fixed;
-  right: 25px;
-  bottom: 20px;
-  z-index: 5;
-}
-
-body:has(.home-page) .cozypets-corner img {
-  display: block;
-  width: 140px;
-  height: auto;
-  max-height: 180px;
-  object-fit: contain;
-  border-radius: 12px;
-}
-
-.hero {
-  position: relative;
-  min-height: 480px;
-  background-color: #20a9ad;
-  background-image: url("images/paws.png");
-  background-repeat: repeat;
-  background-size: 180px;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  padding: 40px 5%;
+  padding-left: 10%;
+  box-sizing: border-box;
 }
 
-.hero-content {
+/* Take a Look at the Courses button */
+.home-page .home-btn {
+  display: inline-block;
+  background-color: #e5e5e5;
+  color: #000000;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 18px 22px;
+  border-radius: 35px;
   position: relative;
   z-index: 2;
-  max-width: 45%;
 }
 
-.hero-content h1 {
-  color: white;
-  font-size: 38px;
+.home-page .home-btn:hover {
+  background-color: #ffffff;
 }
 
-.hero-content p {
-  color: white;
-  font-size: 18px;
+/* RESPONSIVE LAYOUTS */
+
+@media (max-width: 768px) {
+  .brand span {
+    font-size: 0.85rem;
+  }
+
+  .brand img {
+    height: 50px;
+  }
 }
 
-.book-button {
-  display: inline-block;
-  background: #eeeeee;
-  color: #111111;
-  padding: 15px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-}
+@media (max-width: 600px) {
+  .other-activities-image {
+    height: 240px;
+  }
 
-.hero-pets {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  width: 35%;
-  max-width: 300px;
-  max-height: 85%;
-  height: auto;
-  object-fit: contain;
-  object-position: bottom right;
-  z-index: 1;
-  pointer-events: none;
-}
+  .other-activities-title {
+    right: 15px;
+    padding: 6px 12px;
+  }
 
-/* Course Discounts Section */
-.courses-container .course-discounts {
-  margin-top: 25px;
-  padding: 22px;
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid #d6e3e3;
-  border-left: 5px solid #0a8f9c;
-  border-radius: 10px;
-}
+  .other-activities-title h2 {
+    font-size: 0.9rem;
+  }
 
-.course-discounts h2 {
-  color: #065f68;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
+  .grooming-services-image,
+  .training-program-image,
+  .pet-care-image {
+    height: 280px;
+  }
 
-.course-discounts p {
-  color: #333;
-  line-height: 1.6;
-}
+  .grooming-services-title,
+  .training-program-title,
+  .pet-care-title {
+    left: 15px;
+    padding: 6px 12px;
+  }
 
-.course-discounts ul {
-  padding-left: 25px;
-  line-height: 2;
-  color: #333;
-}
+  .grooming-services-title h2,
+  .training-program-title h2,
+  .pet-care-title h2 {
+    font-size: 0.9rem;
+  }
 
-.course-discounts .discount-note {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  color: #555;
+  .grooming-info-box,
+  .training-info-box,
+  .pet-care-info-box {
+    width: 92%;
+    padding: 22px 20px;
+  }
+
+  .grooming-info-box p,
+  .grooming-info-box li,
+  .training-info-box p,
+  .training-info-box li,
+  .pet-care-info-box p,
+  .pet-care-info-box li {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .courses-container {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .courses-table-container th,
+  .courses-table-container td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .home-page .home-hero {
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+  }
+
+  .home-page .home-btn {
+    font-size: 12px;
+    padding: 14px 16px;
+  }
 }
