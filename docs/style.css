@@ -1803,3 +1803,21 @@ body:has(.contact-container) {
   background-attachment: fixed;
   min-height: 100vh;
 }
+
+/* Courses drop-down */
+.dropdown { position: relative; display: inline-block; }
+.dropdown-menu {
+  display: none; position: absolute; top: 100%; left: 0;
+  min-width: 240px; background: #ffffff; border-radius: 8px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); z-index: 100;
+}
+.dropdown-menu a { display: block; padding: 10px 14px; color: #1E293B; }
+.dropdown-menu a:hover { background: #1CABB0; color: #ffffff; }
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu { display: block; }
+
+/* Error and result messages */
+.form-message { margin-top: 15px; padding: 12px 16px; border-radius: 8px; }
+.form-message.error { background: #fdecea; color: #b42318; border: 1px solid #f5c2c0; }
+.form-message.success { background: #e6f7f7; color: #1E293B; border: 1px solid #1CABB0; }
+.form-message ul { margin: 0; padding-left: 18px; }
