@@ -29,6 +29,11 @@ class Training : AppCompatActivity() {
         val behaviour = findViewById<CheckBox>(R.id.checkBehaviorTraining)
         val dogWalking = findViewById<CheckBox>(R.id.checkLeashTraining)
 
+        Booking.link(puppyCare, "Puppy Care", 750.0)
+        Booking.link(obedience, "Canine Obedience Training", 1500.0)
+        Booking.link(behaviour, "Animal Behaviour", 1500.0)
+        Booking.link(dogWalking, "Basic Dog Walking", 750.0)
+
         findViewById<Button>(R.id.btnConfirmSelection2).setOnClickListener {
             Booking.update("Puppy Care", 750.0, puppyCare.isChecked)
             Booking.update("Canine Obedience Training", 1500.0, obedience.isChecked)

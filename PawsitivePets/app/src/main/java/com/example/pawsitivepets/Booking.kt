@@ -1,5 +1,7 @@
 package com.example.pawsitivepets
 
+import android.widget.CheckBox
+
 object Booking {
     val courseNames = ArrayList<String>()
     val coursePrices = ArrayList<Double>()
@@ -21,5 +23,11 @@ object Booking {
     fun clear() {
         courseNames.clear()
         coursePrices.clear()
+    }
+
+    // Ticks the box if the course is already chosen, and saves straight away when ticked or unticked
+    fun link(box: CheckBox, name: String, price: Double) {
+        box.isChecked = courseNames.contains(name)
+        box.setOnCheckedChangeListener { _, ticked -> update(name, price, ticked) }
     }
 }

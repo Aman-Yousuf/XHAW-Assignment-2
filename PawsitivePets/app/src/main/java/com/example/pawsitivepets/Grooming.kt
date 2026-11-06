@@ -25,6 +25,7 @@ class Grooming : AppCompatActivity() {
         }
 
         val grooming = findViewById<CheckBox>(R.id.checkBathAndDry)
+        Booking.link(grooming, "Pet Grooming", 1500.0)
 
         findViewById<Button>(R.id.btnConfirmSelection3).setOnClickListener {
             Booking.update("Pet Grooming", 1500.0, grooming.isChecked)
