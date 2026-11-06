@@ -12,7 +12,7 @@
         android:layout_width="161dp"
         android:layout_height="37dp"
         android:gravity="center"
-        android:text="Our Services:"
+        android:text="Our Courses:"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
